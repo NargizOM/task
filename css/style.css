@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main{
+	width: 100%;
+	
+}
+.clearfix{
+	clear: both;
+}
+.floated{
+	width: 33%;
+	height: 500px;
+	float: left;
+	margin-right: 0.33%;
+	position: relative;
+}
+
+.floated img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.floated:nth-child(3){
+	margin-right: 0;
+}
+
+.layout{
+	position: absolute;
+	width: 0;
+	height: 50%;
+	top: 0;
+	left: 0;
+	background-color: red;
+}
+.layoutother{
+	position: absolute;
+	width: 0;
+	height: 50%;
+	bottom: 0;
+	right: 0;
+	background-color: blue;
+}
+.floated:hover .layout{
+	width: 50%;
+}
+.floated:hover .layoutother{
+	width: 50%;
+}
+
+
